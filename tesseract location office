@@ -1,1 +1,1 @@
-C:\Users\akshit.mahajan\AppData\Local\Programs\Tesseract-OCR
+pytesseract.pytesseract.tesseract_cmd = r"C:\Users\akshit.mahajan\AppData\Local\Programs\Tesseract-OCR\tesseract.exe"
