@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forgery & Tampering Detection</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="bg-light text-center p-5">
+    <div class="container">
+        <h1 class="mb-5">🕵️ Document Evidence Analysis</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">🖼️ Forgery Detection</h5>
+                        <p>Compare two document images</p>
+                        <a href="{{ url_for('forgery_detection') }}" class="btn btn-primary">Open</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">📄 Tampering Detection</h5>
+                        <p>Analyze anomalies in a single image</p>
+                        <a href="{{ url_for('tampering_detection') }}" class="btn btn-primary">Open</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
