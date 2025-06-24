@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forgery Detection</title>
+</head>
+<body>
+    <h2>🖼️ Forgery Detection (Compare Two Images)</h2>
+    <form method="POST" enctype="multipart/form-data">
+        Original Image: <input type="file" name="original" required><br><br>
+        Edited Image: <input type="file" name="edited" required><br><br>
+        <button type="submit">Compare</button>
+    </form>
+
+    {% if result %}
+        <h3>SSIM Score: {{ result.ssim_score }}</h3>
+        <img src="{{ url_for('send_file', filename=result.diff_map) }}" width="400">
+        <img src="{{ url_for('send_file', filename=result.output_image) }}" width="400">
+    {% endif %}
+
+    <br><a href="{{ url_for('home') }}">🔙 Back</a>
+</body>
+</html>

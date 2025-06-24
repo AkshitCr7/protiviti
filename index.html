@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forgery & Tampering Detection</title>
+    <style>
+        body { font-family: Arial; text-align: center; padding: 40px; background: #f5f5f5; }
+        .option { margin: 20px; padding: 20px; background: #ffffff; border-radius: 10px; display: inline-block; width: 300px; box-shadow: 2px 2px 10px #ccc; }
+        a { text-decoration: none; color: black; font-weight: bold; display: block; padding: 10px; }
+    </style>
+</head>
+<body>
+    <h1>🕵️ Document Evidence Analysis</h1>
+    <div class="option">
+        <a href="{{ url_for('forgery_detection') }}">🖼️ Forgery Detection (2 Images)</a>
+    </div>
+    <div class="option">
+        <a href="{{ url_for('tampering_detection') }}">📄 Tampering Detection (1 Image)</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tampering Detection</title>
+</head>
+<body>
+    <h2>📄 Tampering Detection (Single Invoice)</h2>
+    <form method="POST" enctype="multipart/form-data">
+        Upload Invoice Image: <input type="file" name="invoice" required><br><br>
+        <button type="submit">Analyze</button>
+    </form>
+
+    {% if result %}
+        <h3>Analyzed Output</h3>
+        <img src="{{ url_for('send_file', filename=result.analyzed_invoice) }}" width="600">
+    {% endif %}
+
+    <br><a href="{{ url_for('home') }}">🔙 Back</a>
+</body>
+</html>
