@@ -21,7 +21,7 @@ import tkinter as tk
 from tkinter import filedialog
 
 # ── Configuration ────────────────────────────────────────────────
-API_KEY = "AIzaSyDEO6pfzQFbivc_btwwF_LI0K5Yt_H62Ug"
+API_KEY = ""
 
 LAT = 16.763853073120117
 LNG = 77.14752197265625
