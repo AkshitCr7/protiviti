@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Customer Location Visualizer</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+<body class="container py-5">
+  <h1 class="mb-4">Customer Location Visualizer</h1>
+
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      {% for cat, msg in messages %}
+        <div class="alert alert-{{cat}}">{{ msg }}</div>
+      {% endfor %}
+    {% endif %}
+  {% endwith %}
+
+  <form method="post" enctype="multipart/form-data" class="p-5 border rounded">
+    <label class="form-label fs-5">Upload Excel file (.xls / .xlsx)</label>
+    <input class="form-control mb-3" type="file" name="file" required>
+    <button class="btn btn-primary">Generate Report</button>
+  </form>
+</body>
+</html>
